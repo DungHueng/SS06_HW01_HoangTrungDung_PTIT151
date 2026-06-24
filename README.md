@@ -1,1 +1,0 @@
-# SS06_HW01_HoangTrungDung_PTIT151
