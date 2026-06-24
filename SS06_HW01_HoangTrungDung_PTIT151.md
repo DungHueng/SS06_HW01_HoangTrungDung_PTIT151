@@ -7,11 +7,13 @@ Trong hệ thống thương mại điện tử, dữ liệu giỏ hàng là dữ
 - Phân tích các tình huống thực tế (What-if Scenario) như Redis bị crash hoặc mất điện.
 - Đưa ra giải pháp dự phòng (Persistence, Backup, Fallback Database) nhằm đảm bảo dữ liệu giỏ hàng không bị mất hoàn toàn.
 ### Nội dung Prompt tối ưu (chứa đầy đủ 5 thành phần của Prompt)
-- #### Role (Vai trò)
+
+
+#### Role (Vai trò)
   Bạn là một Senior Solution Architect có hơn 10 năm kinh nghiệm thiết kế hệ thống thương mại điện tử quy mô lớn, chuyên về kiến trúc dữ liệu, hiệu năng hệ thống và khả năng chịu lỗi.
-- ### Context (Bối cảnh)
+### Context (Bối cảnh)
   Một hệ thống thương mại điện tử cần lưu trữ dữ liệu giỏ hàng tạm thời của khách hàng. Hệ thống dự kiến phục vụ hàng trăm nghìn người dùng đồng thời và yêu cầu thời gian phản hồi nhanh. Nhóm phát triển đang cân nhắc nhiều phương án lưu trữ như SQL Database, Redis In-Memory Cache và Client-side Session/Cookie nhưng chưa biết giải pháp nào phù hợp nhất.
-- ### Task (Nhiệm vụ)
+### Task (Nhiệm vụ)
   * Đề xuất tối thiểu 3 phương án công nghệ lưu trữ dữ liệu giỏ hàng tạm thời.
   * Mô tả cách hoạt động của từng phương án.
   * So sánh các phương án theo các tiêu chí:
@@ -23,7 +25,7 @@ Trong hệ thống thương mại điện tử, dữ liệu giỏ hàng là dữ
   * Thực hiện phân tích tình huống
   * Đề xuất giải pháp đảm bảo dữ liệu không bị mất hoàn toàn
   * Đưa ra khuyến nghị cuối cùng cho hệ thống thương mại điện tử quy mô lớn
-- ### Format (Định dạng đầu ra)
+### Format (Định dạng đầu ra)
               1. Tổng quan bài toán
       
               2. Các phương án lưu trữ
