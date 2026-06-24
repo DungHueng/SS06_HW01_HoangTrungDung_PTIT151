@@ -48,25 +48,25 @@ Trong hệ thống thương mại điện tử, dữ liệu giỏ hàng là dữ
               7. Kiến trúc đề xuất
               
               8. Kết luận và khuyến nghị
-      ### Constraint (Ràng buộc)
+      Constraint (Ràng buộc)
         - Trả lời bằng tiếng Việt.
         - Giải thích theo góc nhìn thực tế doanh nghiệp.
         - Không chỉ liệt kê lý thuyết mà phải phân tích trade-off giữa các giải pháp.
       
-      - ### Minh chứng chạy thực tế
-      # MINH CHỨNG CHẠY THỰC TẾ
+      - Minh chứng chạy thực tế
+      MINH CHỨNG CHẠY THỰC TẾ
       
-      ## Prompt sử dụng
+      Prompt sử dụng
       
       Giả sử bạn là kiến trúc sư hệ thống hãy đề xuất ít nhất 3 phương án công nghệ lưu trữ dữ liệu giỏ hàng tạm thời (ví dụ: SQL Database, In-memory Redis Cache, Client-side Session/Cookie). Và so sánh chi tiết giữa các phương án dựa trên các tiêu chí: Tốc độ đọc/ghi, Tính đồng nhất dữ liệu, Khả năng chịu lỗi/mất mát dữ liệu, và Độ phức tạp triển khai. Vậy chuyện gì xảy ra nếu cụm máy chủ Redis đột ngột bị crash hoặc mất nguồn điện? Làm thế nào để đảm bảo giỏ hàng của khách hàng không bị biến mất hoàn toàn (cấu hình cơ chế Persistence RDB/AOF của Redis kết hợp cơ chế fallback ghi tạm xuống SQL)?
       
       ---
       
-      ## Kết quả phản hồi của AI
+      Kết quả phản hồi của AI
       
-      ### 1. Các phương án lưu trữ giỏ hàng
+      1. Các phương án lưu trữ giỏ hàng
       
-      #### Phương án 1: SQL Database (MySQL/PostgreSQL)
+      Phương án 1: SQL Database (MySQL/PostgreSQL)
       
       * Lưu dữ liệu giỏ hàng trực tiếp vào cơ sở dữ liệu quan hệ.
       * Dữ liệu được đảm bảo tính toàn vẹn thông qua ACID Transaction.
@@ -104,7 +104,7 @@ Trong hệ thống thương mại điện tử, dữ liệu giỏ hàng là dữ
       
       ---
       
-      #### Phương án 3: Client-side Session/Cookie
+      Phương án 3: Client-side Session/Cookie
       
       * Lưu dữ liệu giỏ hàng trên trình duyệt người dùng.
       
@@ -120,7 +120,7 @@ Trong hệ thống thương mại điện tử, dữ liệu giỏ hàng là dữ
       
       ---
       
-      ### 2. Bảng so sánh
+      2. Bảng so sánh
       
       | Tiêu chí               | SQL Database | Redis      | Session/Cookie |
       | ---------------------- | ------------ | ---------- | -------------- |
@@ -134,7 +134,7 @@ Trong hệ thống thương mại điện tử, dữ liệu giỏ hàng là dữ
       
       ---
       
-      ### 3. What-if Scenario: Redis bị crash hoặc mất điện
+      3. What-if Scenario: Redis bị crash hoặc mất điện
       
       Kịch bản:
       
@@ -158,7 +158,7 @@ Trong hệ thống thương mại điện tử, dữ liệu giỏ hàng là dữ
       
       ---
       
-      ### 4. Giải pháp Persistence bằng RDB
+      4. Giải pháp Persistence bằng RDB
       
       Cấu hình:
       
@@ -183,7 +183,7 @@ Trong hệ thống thương mại điện tử, dữ liệu giỏ hàng là dữ
       
       ---
       
-      ### 5. Giải pháp Persistence bằng AOF
+      5. Giải pháp Persistence bằng AOF
       
       Cấu hình:
       
@@ -206,7 +206,7 @@ Trong hệ thống thương mại điện tử, dữ liệu giỏ hàng là dữ
       
       ---
       
-      ### 6. Kiến trúc Redis + SQL Fallback
+      6. Kiến trúc Redis + SQL Fallback
       
       User
       ↓
@@ -317,7 +317,7 @@ Trong hệ thống thương mại điện tử, dữ liệu giỏ hàng là dữ
       
       ---
       
-      ### 8. Kết luận
+      8. Kết luận
       
       Giải pháp được khuyến nghị:
       
