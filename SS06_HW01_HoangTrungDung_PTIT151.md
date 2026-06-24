@@ -83,7 +83,7 @@ Trong hệ thống thương mại điện tử, dữ liệu giỏ hàng là dữ
       
       ---
       
-      #### Phương án 2: Redis In-Memory Cache
+      Phương án 2: Redis In-Memory Cache
       
       * Lưu dữ liệu trong RAM.
       * Truy xuất dữ liệu cực nhanh.
